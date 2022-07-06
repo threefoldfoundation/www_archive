@@ -1,0 +1,12 @@
+:2015 {
+    bind 0.0.0.0
+
+    git {
+        repo https://github.com/freeflownation/www_freeflowevent
+        branch master
+        hook /webhook "zU3687$aJEb6"
+        key ~/.ssh/id_rsa
+        path .
+        
+    }
+}
