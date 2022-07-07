@@ -1,0 +1,20 @@
+
+<!-- Content Block
+      ============================================ -->
+
+      {{ range $element :=  .Data.Pages }}
+                  {{ if eq .Section "home" }}
+                      {{ if eq .Title "home" }}
+      <!-- Two -->
+			<section id="two" style="background-image: url(images/overlay.png), url({{.Params.slide3_image}});" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>{{.Params.slide3_title}}</h2>
+					</header>
+					<p>{{.Params.slide3_text}}</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+{{end}}
+{{end}}
+{{end}}

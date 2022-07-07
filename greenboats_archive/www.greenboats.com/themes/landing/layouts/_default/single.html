@@ -1,0 +1,79 @@
+{{ partial "head.html" . }}
+<body>
+{{ partial "header.html" . }}
+<style type="text/css">
+
+html {
+  position: relative !important;
+  min-height: 100% !important;
+  height: auto !important;
+}
+body {
+
+}
+footer {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100% !important;
+
+}
+h2 {
+    font-size: 2.10em;
+    letter-spacing: -2px;
+    line-height: 1.25em;
+
+    font-weight: lighter;
+}
+h3 { 
+    font-weight: lighter;
+    font-size: 2.10em;
+}
+.main.style3 .content > header {
+  text-align: left;
+}
+.internal-single + p { display: none;}
+.main.style3 {    padding: 0em 0 6em 0;}
+</style>
+<section id="work" class="main style3 primary">
+        <div class="title-banner">
+          <div class="content container">
+            <header>
+             <h2>{{ .Title }}</h2>
+             </header>
+          </div>          
+        </div>
+        <div class="content container">
+          <header>
+
+            <div class="internal-single">
+             
+              <div class="row">
+              	<div class="text-center intenal-list">
+	              	<!-- <ul>
+		              	<li><img class="internal_pic" src="{{.Params.pic1}}"></li>
+		              	<li><img class="internal_pic" src="{{.Params.pic2}}"></li>
+		              	<li><img class="internal_pic" src="{{.Params.pic3}}"></li>
+		              	<li><img class="internal_pic" src="{{.Params.pic4}}"></li>	              		
+	              	</ul> -->
+              	</div>
+              	
+              </div>
+              
+            </div>
+
+
+
+
+            <p>{{ .Content }}</p>
+          </header>
+
+          
+            
+
+        </div>
+      </section>
+{{ partial "footer.html" . }}
+</body>
+</html>
+
+

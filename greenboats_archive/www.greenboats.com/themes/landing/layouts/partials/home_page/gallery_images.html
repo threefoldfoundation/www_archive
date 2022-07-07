@@ -1,0 +1,38 @@
+
+<!-- Content Block
+      ============================================ -->
+
+      {{ range $element :=  .Data.Pages }}
+                  {{ if eq .Section "home" }}
+                      {{ if eq .Title "home" }}
+      
+<!-- Work -->
+      <section id="work" class="main style3 primary">
+        <div class="content container">
+          <header>
+            <h2>{{.Params.gallery_title}}</h2>
+            <p>{{.Params.gallery_text}}</p>
+          </header>
+
+          <!-- Lightbox Gallery  -->
+            <div class="container 75% gallery">
+              <div class="row 0% images">
+                <div class="6u 12u(mobile)"><a href="{{.Params.gallery_image1}}" class="image fit from-left"><img src="{{.Params.gallery_image1}}" title="The Anonymous Red" alt="" /></a></div>
+                <div class="6u 12u(mobile)"><a href="{{.Params.gallery_image2}}" class="image fit from-right"><img src="{{.Params.gallery_image2}}" title="Airchitecture II" alt="" /></a></div>
+              </div>
+              <div class="row 0% images">
+                <div class="6u 12u(mobile)"><a href="{{.Params.gallery_image3}}" class="image fit from-left"><img src="{{.Params.gallery_image3}}" title="Air Lounge" alt="" /></a></div>
+                <div class="6u 12u(mobile)"><a href="{{.Params.gallery_image4}}" class="image fit from-right"><img src="{{.Params.gallery_image4}}" title="Carry on" alt="" /></a></div>
+              </div>
+              <div class="row 0% images">
+                <div class="6u 12u(mobile)"><a href="{{.Params.gallery_image5}}" class="image fit from-left"><img src="{{.Params.gallery_image5}}" title="The sparkling shell" alt="" /></a></div>
+                <div class="6u 12u(mobile)"><a href="{{.Params.gallery_image6}}" class="image fit from-right"><img src="{{.Params.gallery_image6}}" title="Bent IX" alt="" /></a></div>
+              </div>
+            </div>
+
+        </div>
+      </section>
+{{end}}
+{{end}}
+{{end}}
+

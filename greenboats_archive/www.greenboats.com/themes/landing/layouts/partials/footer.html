@@ -1,0 +1,30 @@
+
+
+     <!-- Footer
+      =================================================== -->
+      {{ range $element :=  $.Site.Pages }}
+        {{ if eq .Section "home" }}
+          {{ if eq .Title "home" }}
+            <!-- Footer -->
+      <footer id="footer">
+
+        <!-- Icons -->
+         <!--  <ul class="actions"> -->
+            <!-- <li><a href="{{.Params.icon1_link}}" class="icon {{.Params.icon1}}" target="_blank"><span class="label">{{.Params.icon1_name}}</span></a></li>
+            <li><a href="{{.Params.icon2_link}}" class="icon {{.Params.icon2}}" target="_blank"><span class="label">{{.Params.icon2_name}}</span></a></li> -->
+            <!-- <li><a href="{{.Params.icon3_link}}" class="icon {{.Params.icon3}}"><span class="label">{{.Params.icon3_name}}</span></a></li>
+            <li><a href="{{.Params.icon4_link}}" class="icon {{.Params.icon4}}"><span class="label">{{.Params.icon4_name}}</span></a></li> -->
+            <!-- <li><a href="{{.Params.icon5_link}}" class="icon {{.Params.icon5}}"><span class="label">{{.Params.icon5_name}}</span></a></li>
+            <li><a href="{{.Params.icon6_link}}" class="icon {{.Params.icon6}}"><span class="label">{{.Params.icon6_name}}</span></a></li> -->
+         <!--  </ul> -->
+
+        <!-- Menu -->
+          <ul class="menu">
+            <li>&copy; {{.Params.company_name}}</li><!-- <li>{{.Params.company_slogan}}</li> -->
+          </ul>
+
+      </footer>
+
+            {{end}}
+        {{end}}
+      {{end}}

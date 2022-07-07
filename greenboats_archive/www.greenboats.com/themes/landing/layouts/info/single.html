@@ -1,0 +1,155 @@
+{{ partial "head.html" . }}
+
+{{ partial "header.html" . }}
+
+
+    
+    
+    
+<link href="/css/styles.css" rel="stylesheet">
+
+
+<body>
+
+<div class="stage">
+
+	{{if eq .Title "Explore Inside"}}
+	<h2 style="margin-bottom: 30px;">{{.Title}}</h2>
+	<div id="SLDR-ONE" class="sldr">
+		<ul class="wrp animate">
+			{{ $images_path := .Params.images_path }}
+			{{ range $index, $image_name := .Params.images_inside }}
+			<li class="elmnt-{{$index}}"><div class="skew"><div class="wrap"><img class="lazy" src="{{ $images_path }}{{ $image_name }}" data-original="{{ $images_path }}{{ $image_name }}" width="640" height="480"></div></div></li>
+			{{end}}
+			
+		</ul>
+	</div>
+	{{end}}
+
+	{{if eq .Title "Explore Outside"}}
+	<h2 style="margin-bottom: 30px;">{{.Title}}</h2>
+	<div id="SLDR-ONE" class="sldr">
+		<ul class="wrp animate">
+			{{ $images_path := .Params.images_path }}
+			{{ range $index, $image_name := .Params.images_outside }}
+			<li class="elmnt-{{$index}}"><div class="skew"><div class="wrap"><img class="lazy" src="{{ $images_path }}{{ $image_name }}" data-original="{{ $images_path }}{{ $image_name }}" width="640" height="480"></div></div></li>
+			{{end}}
+		</ul>
+	</div>
+	{{end}}
+
+
+	<!-- <div class="clear"></div>
+
+	<div class="captions">
+	 <div class="focalPoint"><p><small>Lake</small></p></div>
+	 <div><p><small>Mountain Range</small></p></div>
+	 <div><p><small>Mt. Fuji</small></p></div>
+	 <div><p><small>Pink Forest</small></p></div>
+	</div> -->
+    
+    
+	<!-- <ul class="selectors">
+		<li class="focalPoint"><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li>
+	</ul> -->
+
+	<button class="sldr-prv sldr-nav prev">Prev</button>
+	<button class="sldr-nxt sldr-nav next">Next</button>
+
+	
+	
+
+	
+
+	<br>
+	<br>
+	<br>
+	
+	
+
+</div>
+
+
+
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.sldr.js"></script>
+<script src="/js/jquery.lazyload.min.js"></script>
+<script>
+
+$( window ).load( function() {
+	$("img.lazy").show().lazyload();
+	$( '.sldr' ).each( function() {
+		var th = $( this );
+		th.sldr({
+			focalClass    : 'focalPoint',
+			offset        : th.width() / 2,
+			sldrWidth     : 'responsive',
+			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+			sldrInit      : sliderInit,
+			sldrStart     : slideStart,
+			sldrComplete  : slideComplete,
+			sldrLoaded    : sliderLoaded,
+			sldrAuto      : true,
+			sldrTime      : 5000,
+			hasChange     : true
+		});
+	});
+});
+/**
+ * Sldr Callbacks
+ */
+
+/**
+ * When the sldr is initiated, before the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderInit( args ) {
+
+}
+
+/**
+ * When individual slides are loaded
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideLoaded( args ) {
+
+}
+
+/**
+ * When the full slider is loaded, after the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderLoaded( args ) {
+
+}
+
+/**
+ * Before the slides change focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideStart( args ) {
+
+}
+
+/**
+ * After the slides are done changing focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideComplete( args ) {
+
+}
+
+</script>
+
+{{ partial "footer.html" . }}
+
+</body>

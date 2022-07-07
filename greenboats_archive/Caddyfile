@@ -1,0 +1,13 @@
+http://greenboats.com:89 {
+    bind 0.0.0.0
+    gzip
+    root www.greenboats.com/en
+    git {
+       repo git@github.com:Incubaid/www_greenboats.git
+       interval 600
+       branch production
+       key ../keys/id_rsa-new
+       path ../..
+       then hugo -s www.greenboats.com
+    }
+}

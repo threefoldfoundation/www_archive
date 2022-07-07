@@ -1,0 +1,22 @@
+
+<!-- Content Block
+      ============================================ -->
+
+      {{ range $element :=  .Data.Pages }}
+                  {{ if eq .Section "home" }}
+                      {{ if eq .Title "home" }}
+       <!-- Intro -->
+      <section id="intro" style="background-image: url(images/overlay.png), url({{.Params.slide1_image}});" class="main style1 dark fullscreen">
+        <div class="content container 75%">
+          <header>
+            <h2>{{.Params.slide1_title}}</h2>
+          </header>
+          <p>{{.Params.slide1_text}}</p>
+          <footer>
+            <a href="#one" class="button style2 down">More</a>
+          </footer>
+        </div>
+      </section>
+{{end}}
+{{end}}
+{{end}}

@@ -1,0 +1,57 @@
+{{ partial "head.html" . }}
+
+{{ partial "header.html" . }}
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		
+		
+		<script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+		<script src="/js/stellar.js"></script>
+		<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+		</script>
+	</head>
+	<body style="zoom: 1;">
+		<div class="photo slide4" data-stellar-background-ratio="0.5" style="background-position: 50% ;"><!-- <span>Spring</span> -->
+			<div class="quotes">
+		         <h2>{{.Params.slide1_header}}</h2>
+		         <p>{{.Params.slide1_text}}</p>
+		     </div>
+		 </div>
+
+		{{ range $image_name :=  .Params.gallery_images1 }}
+		<div class="photo slide1" data-stellar-background-ratio="0.5" style="background-position: 50%; background-image: url(/images/sail/{{ $image_name }});"><!-- <span>Summer</span> --></div>
+		{{end}}
+
+		<div class="photo slide8" data-stellar-background-ratio="0.5" style="background-position: 50% ;"><!-- <span>Spring</span> -->
+             <div class="quotes">
+		         <h2>{{.Params.slide2_header}}</h2>
+		         <p>{{.Params.slide2_text}}</p>
+		     </div></div>
+
+		
+
+		{{ range $image_name :=  .Params.gallery_images2 }}
+		<div class="photo slide5" data-stellar-background-ratio="0.5" style="background-position: 50%; background-image: url(/images/sail/{{ $image_name }});"><!-- <span>Summer</span> --></div>
+		{{end}}
+		
+
+
+		
+
+		{{ partial "footer.html" . }}
+	
+</body>
+
+</html>
