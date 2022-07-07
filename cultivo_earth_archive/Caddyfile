@@ -1,0 +1,13 @@
+:2015 {
+    bind 0.0.0.0
+    gzip
+    root .
+    
+    git {
+        repo https://github.com/cultivo/www_cultivo_earth.git
+        branch production
+        hook /webhook "test9278"
+        key ~/.ssh/id_rsa
+        path . 
+    }
+}
