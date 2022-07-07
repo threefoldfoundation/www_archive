@@ -1,0 +1,24 @@
+
+
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-left: 0;
+
+  a{
+    color: $muted;
+  }
+}
+
+.breadcrumb>li+li:before {
+  padding: 0 5px;
+  color: $muted;
+  content: "\f105" !important;
+  font-family: FontAwesome;
+}
+
+code {
+  color: $primary;
+}
+
