@@ -1,0 +1,12 @@
+http://staging.midori.blue:8089 {
+    bind 0.0.0.0
+    gzip
+    root www.midori.blue/en
+    git {
+       repo git@github.com:Incubaid/www_midori.git
+       interval 300
+       key ../keys/id_rsa-new
+       path ../..
+       then hugo  -s www.midori.blue
+    }
+}

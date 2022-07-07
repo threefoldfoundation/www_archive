@@ -1,0 +1,212 @@
+body { margin: 0; padding: 0; width: 100%;font-family: arial }
+h1 { font-family:"Arvo"; font-weight:normal; font-size: 55px; text-align: center; color: #fff; margin: 0; padding: 0; }
+h2 { font-family:"Palatino Linotype","Book Antiqua","Palatino","serif"; font-weight: bold;text-align: center; ;font-size: 82px;font-style: normal;max-width: 100%;text-align: center; padding-top: 150px; color: #FFFFFF; text-transform: uppercase; line-height: 1em; text-decoration: none; font-weight: bold; letter-spacing: 0.170em;margin-bottom: 0; }
+h3 { font-family: "proxima-nova"; font-weight: normal; font-size: 17px; text-align: center; margin: 5px 0; padding: 0; z-index: 1; position: relative; }
+.first-title {font-family:"Palatino Linotype","Book Antiqua","Palatino","serif"; font-weight: bold;text-align: center; ;font-size: 82px;font-style: normal;max-width: 100%;text-align: center;margin: 0 ; padding:0; color: #FFFFFF; text-transform: uppercase; line-height: 1em; text-decoration: none; font-weight: bold; letter-spacing: 0.170em; }
+.center { margin: 0 auto; }
+.content { margin: 0 auto; width: 960px; }
+.clear { clear: both; }
+/*= HEADER & NAVIGATION
+--------------------------------------------------------*/
+#header { width: 100%; background: rgba(0, 0, 0, 0); height: 80px; position: fixed;z-index: 2;}
+#header.scrolled { background: rgba(18, 26, 28, 0.92);}
+#header {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+#nav { width: 473px; float: right; margin-top: 30px; }
+#logo a { text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #FFF; font-family: Wellfleet; font-weight: bold; margin-left: 50px; }
+#nav ul { list-style: none; display: block; margin: 0 auto; list-style: none; padding: 0; }
+#nav li { margin-top: 9px; display: inline; padding-left: 21px; }
+#nav li a { color: #fff; opacity:0.6; font-size: 17px; text-decoration: none; font-family: 'arvo'; }
+#nav li a.active { color: #FFF; opacity:1; }
+#nav li a:hover { color: #fff; opacity:1; }
+/*= QUOTES AND SOME ELEMENTS
+--------------------------------------------------------*/
+.quotes { width: 83%;font-family: 'Raleway', sans-serif; font-weight: 300; font-size: 22px;line-height: 1.8em;letter-spacing: .015em;font-weight: 300; font-style:normal;text-transform: none;margin-left: 83px;text-align: center;}
+.author_name_white { font-family:"Palatino Linotype","Book Antiqua","Palatino","serif"; margin: 70px 0 0 75px; color: #fff; font-size: 20px; }
+.author_name_gray { font-family:arial; margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; }
+.quotes_container { width: 962px; margin: 0 auto; }
+/*= BUTTONS
+--------------------------------------------------------*/
+
+button.btn-know { padding: 15px 47px; margin: 40px 38.8%; text-align: center; border: 4px solid #fff; color: #fff; background: transparent; font-size: 19px; cursor: pointer; text-shadow: -1px 2px 0px rgba(90, 90, 90, 0.56); -webkit-border-radius: 4px; border-radius: 4px; }
+.btn-know:hover { background: #fff; color: transparent; }
+ul.built { list-style: none; margin: 0 auto; width: 730px; }
+.built li img { float: left; padding-right: 34px; }
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+
+#slide1, #slide2 { width: 100%; }
+
+#slide2 { background-color: #FFFFFF; color: #a3a3a3; margin: 0 auto; overflow: hidden; padding: 100px 0; }
+#slide3 {  }
+#slide8 {  }
+#slide4 { background-color: #FFFFFF; color: #a3a3a3; padding: 100px 0; }
+#slide9 { background-color: #FFFFFF; color: #a3a3a3; padding: 100px 0; }
+#slide5 {  }
+#slide6 { background-color: #FFFFFF; color: #a3a3a3; padding: 100px 0;}
+
+/*= FOOTER
+--------------------------------------------------------*/
+
+#slide1 .content { margin-top: 220px; /*background: rgba(72, 72, 72, 0.3);*/ }
+.social{
+  color: #FFFFFF;
+  text-align: center;font-size: 20px;margin-bottom: 35px;}
+.error {
+    color: rgb(221,44,0);
+}
+
+.fullscreenform:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -999;
+  display: block;
+  background-image: url('../img/masks.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-filter: opacity(0.2) contrast(0.2);
+  -moz-filter: opacity(0.2) contrast(0.2);
+  -o-filter: opacity(0.2) contrast(0.2);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: opacity(0.2) contrast(0.2);
+}
+
+.fullscreenform {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.fullscreenform form {
+  margin: 150px 50px 0px 50px;
+}
+
+@media (max-width: 1200px) {
+.content { width: 960px; }
+.quotes_container { width: 800px; }
+}
+@media (max-width: 1024px) {
+.content { width: 900px; }
+.quotes_container { width: 800px; }
+}
+@media (max-width: 900px) {
+.content { width: 100%; }
+.quotes_container { width: 100%; }
+.quotes { padding-right: 30px; padding-left: 30px; }
+.text-center { width: 100% !important; padding-bottom: 20px}
+.doc a {    display: inline-block; float: none !important;}
+.sign-wrap {float: none !important;text-align: center;}
+.sign-wrap a { color: #FFF; text-decoration: none;margin: 20px 20px 0 0 !important;display: inline-block;}
+}
+@media (max-width: 768px) {
+.content { width: 100%; }
+.quotes_container { width: 100%; }
+.quotes { padding-right: 30px; padding-left: 30px; }
+#slide6 { padding-bottom: 450px; }
+#logo { display: block; padding: 0 30px; text-align: center; }
+#logo a { float: none; }
+#nav { display: block; padding: 0 0px; text-align: center; float: none; width: 100%; }
+#header { padding: 10px 0; }
+}
+#slide3 .content { /*background: rgba(72, 72, 72, 0.2);*/ }
+#slide5 .content { /*background: rgba(175, 175, 175, 0.2);*/ }
+footer { background: #3091BB; color: #FFF; padding: 20px 0; text-align: center; font-family: 'arvo'; font-size: 17px; }
+#slide7 {/*background: url(../img/bg.png) repeat;*/padding: 25px 0;background-color: #121a1c;color:#FFFFFF;}
+.doc a {background: url(../img/button1.png) no-repeat center center;width: 315px;float: left;margin: 0 0px;color: #FFF;text-decoration: none;font-family: arial;padding: 24px 0 24px 0px;text-align: center;}
+.text-center { text-align: center;width: 962px;margin: 0 auto;}
+.doc2 a {background-image: url(../img/button2.png);padding: 24px 0 24px 5px;}
+.doc3 a {background-image: url(../img/button3.png);padding: 24px 0 24px 5px;}
+.doc a:hover { opacity: 0.9;}
+.github-link {padding-left: 35px;}
+.sign-wrap { margin-top: 15px;}
+.sign-wrap a { color: #FFF; text-decoration: none;display: inline-block;font-family:"Palatino Linotype","Book Antiqua","Palatino","serif";font-size: 23px;text-decoration: uppercase; letter-spacing: .1em;font-weight: 500;font-style: normal;line-height: 1em;}
+.sign-wrap a:hover { opacity: 0.9;}
+.sign-wrap a i {margin: 0 6px 0 0;font-size: 15px;}
+.text-align-center{
+  text-align: center;font-size: 17px;line-height: 1.8em;letter-spacing: .015em;font-weight: 300;font-style: normal;
+}
+.nav>li>a:hover{ background-color: transparent;}
+.navbar-toggle{margin-top: 15px; border: 2px solid #fff;}
+.icon-bar{ background-color: #fff;}
+.navbar-nav{ text-align: left; }
+.first-paragraph{
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+  line-height: 1.6em;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-weight: bold;
+  font-style: normal;
+}
+.social a {color:#fff;}
+.sign-wrap a:active {color: #58b7e6;}
+.in{ background: rgba(18, 26, 28, 0.5);}
+
+.side-title{
+    font-family: 'Cabin', sans-serif;
+    font-size: 36px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .015em;
+    font-weight: 700;
+    font-style: normal;
+    margin: 1em 0 ;
+    color: #121a1c;
+  }
+
+
+  .button-menu{
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+
+  }
+
+  .button{
+    border-radius: 300px;
+    color: #272727;
+    border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    padding: 21px 34px;
+    font-family: 'Cabin', sans-serif !important;
+    letter-spacing: 1px;
+    font-family: "proxima-nova";
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+  .button:hover {
+    border-color:#272727;
+    background-color: #272727;
+    color: #fff;
+} 
+  
+.active{
+  color: red;
+}
+
+.gif_boat{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 960px;
+  height: 495px;
+}

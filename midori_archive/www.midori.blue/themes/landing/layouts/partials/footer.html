@@ -1,0 +1,50 @@
+
+
+     <!-- Footer
+      =================================================== -->
+      {{ range $element :=  $.Site.Pages }}
+        {{ if eq .Section "home" }}
+          {{ if eq .Title "footer" }}
+           
+
+
+          <div id="slide7">
+    <div class="content">
+      <div class="social">
+        <a href="{{.Params.facebook_link}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  
+      </div>
+      <div class="quotes_container">
+        <p class="text-align-center">© {{.Params.copy_right}}<br>
+{{.Params.text}}</p>
+
+        <!-- <div class="button-center text-center">
+          <div class="doc">
+            <a target="_blank" href="#">
+              Documentation
+            </a>
+          </div>
+          <div class="doc doc2">
+            <a target="_blank" href="#">
+              API Documentation
+            </a>
+          </div>
+          <div class="doc doc3">
+            <a target="_blank" href="https://github.com/itsyouonline">
+              <span class="github-link">
+                Itsyoutonline on Github
+              </span>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+            {{end}}
+        {{end}}
+      {{end}}
+            <!-- /Footer
+            =================================================== -->

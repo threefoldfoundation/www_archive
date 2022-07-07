@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ partial "parallax.html" . }}
+{{ partial "footer.html" . }}
+
+
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script>
+/**
+ * Listen to scroll to change header opacity class
+ */
+ function checkScroll(){
+     var startY = $('#header').height() * 2; //The point where the navbar changes in px
+
+     if($(window).scrollTop() > startY){
+         $('#header').addClass("scrolled");
+     }else{
+         $('#header').removeClass("scrolled");
+     }
+ }
+
+ function checkIn(){
+   var startY = $('.navbar-nav').height() * 2; //The point where the navbar changes in px
+
+   if($(window).scrollTop() > startY){
+       $('.navbar-nav').addClass("in");
+   }else{
+       $('.navbar-nav').removeClass("in");
+   }
+ }
+
+ if($('#header').length > 0){
+     $(window).on("scroll load resize", function(){
+         checkScroll();
+     });
+ }
+
+ if($('.navbar-nav').length > 0){
+     $(window).on("scroll load resize", function(){
+         checkIn();
+     });
+ }
+
+$(document).ready(function() {
+  $('#nav a').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+</script>
+</body>
+</html>
+
