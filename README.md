@@ -1,8 +1,7 @@
 # Archived sites:
 
-atwg tech: https://threefoldfoundation.github.io/www_archive/atwg_tech_archive
-
-cultivo earth: https://threefoldfoundation.github.io/www_archive/cultivo_earth_archive
+- atwg tech: https://threefoldfoundation.github.io/www_archive/atwg_tech_archive
+- cultivo earth: https://threefoldfoundation.github.io/www_archive/cultivo_earth_archive
 earth project: https://threefoldfoundation.github.io/www_archive/earthproject_archive
 enertia: https://threefoldfoundation.github.io/www_archive/enertia_io_archive
 enertia tech: https://threefoldfoundation.github.io/www_archive/enertia_tech_archive
