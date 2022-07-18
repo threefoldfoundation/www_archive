@@ -14,7 +14,7 @@
 - inid: https://threefoldfoundation.github.io/www_archive/inid.io_archive
 - midori: https://threefoldfoundation.github.io/www_archive/midori_archive
 - openly: https://threefoldfoundation.github.io/www_archive/openly_archive
-- 3botorg: https://threefoldfoundation/www_archive/tree/3bot_org_archive
+- 3botorg: https://threefoldfoundation.github.io/www_archive/3bot_org_archive
 
 
 
