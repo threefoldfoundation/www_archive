@@ -9,7 +9,7 @@
 - freeflowevent: https://threefoldfoundation.github.io/www_archive/freeflowevent_archive
 - freeflowmatchmakers:https://threefoldfoundation.github.io/www_archive/freeflowmatchmakers_archive
 - goldflow: https://threefoldfoundation.github.io/www_archive/goldflow_io_archive
-- greenboats: https://threefoldfoundation.github.io/www_archive/greenboats_archive/www.greenboats.com
+- greenboats: https://threefoldfoundation.github.io/www_archive/greenboats_archive
 - harvested: https://threefoldfoundation.github.io/www_archive/harvested_archive
 - inid: https://threefoldfoundation.github.io/www_archive/inid.io_archive
 - midori: https://threefoldfoundation.github.io/www_archive/midori_archive
