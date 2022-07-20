@@ -6,6 +6,7 @@
 
 module.exports = {
     siteName: 'Threefold Webstack',
+    pathPrefix: '/climate_archive',
     plugins: [
 
         // Local models
