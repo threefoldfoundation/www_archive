@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/info/inside/</loc>
+  </url><url>
+    <loc>/info/outside/</loc>
+  </url><url>
+    <loc>/</loc>
+  </url><url>
+    <loc>/home/home/</loc>
+  </url><url>
+    <loc>/home/</loc>
+  </url><url>
+    <loc>/info/</loc>
+  </url><url>
+    <loc>/play/</loc>
+  </url><url>
+    <loc>/relax/</loc>
+  </url><url>
+    <loc>/sail/</loc>
+  </url><url>
+    <loc>/tags/</loc>
+  </url>
+</urlset>

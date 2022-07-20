@@ -1,0 +1,16 @@
+#logo { margin: 10px 0 0 0;}
+#intro h2 {text-shadow: 1px 1px 5px #000;}
+#intro p {background: rgba(0,0,0,0.3);}
+.main.style3 {text-align: center; padding: 3em 0 6em 0;}
+.internal_pic {height: 190px;margin-top: 25px;width: 251px;}
+.intenal-list li {display: inline;}
+.title-banner {padding: 66px 0;background: url(/images/banner2.jpg) center center no-repeat;color: #FFF;margin-top: 1.2em;}
+.title-banner h2 { color: #FFF}
+.title-banner header { margin-bottom: 0 !important;}
+.navbar-brand{ padding: 10px 20px;}
+.dropdown-menu>li>a{padding: 20px;}
+.navbar-right{ margin-top: 22px;}
+.navbar-toggle{ background-color: #29ABE1; margin-top: 17px;}
+button span{ background-color: #fff;}
+.navbar-collapse{ background-color: #fff; }
+.nav>li>a:focus, .nav>li>a:hover{ background-color: transparent;}
