@@ -9,10 +9,10 @@
 - freeflowevent: https://threefoldfoundation.github.io/www_archive/freeflowevent_archive
 - freeflowmatchmakers:https://threefoldfoundation.github.io/www_archive/freeflowmatchmakers_archive
 - goldflow: https://threefoldfoundation.github.io/www_archive/goldflow_io_archive
-- greenboats: https://threefoldfoundation.github.io/www_archive/greenboats_archive
+- greenboats: https://incubaid-archive.github.io/greenboats_archive/
 - harvested: https://threefoldfoundation.github.io/www_archive/harvested_archive
 - inid: https://threefoldfoundation.github.io/www_archive/inid.io_archive
-- midori: https://threefoldfoundation.github.io/www_archive/midori_archive
+- midori: https://incubaid-archive.github.io/midori_archive/
 - openly: https://threefoldfoundation.github.io/www_archive/openly_archive
 - 3botorg: https://threefoldfoundation.github.io/www_archive/3bot_org_archive
 
